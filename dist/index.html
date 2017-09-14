@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hero On Notebook</title>
+
+	<style>
+		@import url(CSS/main.css);
+	</style>
+</head>
+<body>
+
+	<div id="Screen">
+
+		<div id="Logo">
+			<img src="res/Images/Logo.png" alt="logo">
+		</div>		
+		
+		<div id="CanvasDiv">
+				<canvas id="canvas"></canvas>
+		</div>
+
+		<div id="roll"></div>
+
+		<div id="blackboard">
+			<img src="res/Images/schwarzblatt.png" alt="schwarz">
+		</div>
+
+
+		<div id="Top">	
+			<div class="monster3 Gull" id="Gull1"></div>
+			<div class="monster4 Gull" id="Gull2"></div>
+
+			<!-- 
+			<img class="Lighting transition1s" src="res/Images/Lightning.png" alt="Lightning1">
+			-->
+
+			<div class="monster Lighting" id="Lightning1"></div>
+			<div class="monster2 Lighting" id="Lightning2"></div>
+
+			<!--
+			<img id="Lightning2" class="Lighting transition1s" src="res/Images/Lightning.png" alt="Lightning2">
+			-->
+
+			<img id="Devil" src="res/Images/xiaoguaishouchuxian.png" alt="Devil">
+
+			<img id="DevilWithGirl" src="res/Images/xiaoguaishoujienvhai.png" alt="DevilWithGirl">
+
+
+		</div>
+
+		<div id="Heart">
+			<img id="HeartImage" src="res/Images/xin.png" alt="Heart">
+		</div>
+
+		<div id="Mid">
+			<!--
+			<img id="MidImage" src="res/Images/MidTrans.png" alt="MidImage" >
+			-->
+			<div id="realMid">
+				<div id="parallax">
+					<ul id="scene">
+						<li class="layer" id="girl" data-depth="0.10"><img src="res/Images/Welle1.png" alt=""></li>
+						<li class="layer" id="hero" data-depth="0.40"><img src="res/Images/Welle2.png" alt=""></li>
+						<li class="layer" id="lightning" data-depth="0.80"><img src="res/Images/Welle3.png" alt=""></li>
+					</ul>
+				</div>
+			</div>
+		
+		</div>
+
+		
+		
+		
+
+
+		<div id="Bot">
+
+			
+			<!--
+			<div id="HeroAndGirl">
+				<div id="Hero1">
+					<img id="Hero1Image" src="res/Images/Hero1.png" alt="Hero1">
+				</div>
+				
+				<div id="Girl1">
+					<img id="Girl1Image" src="res/Images/Girl1.png" alt="Girl1">
+				</div>
+			</div>
+			-->
+
+			<img id="HeroWithGirl" src="res/Images/liangxiaowucai.png" alt="HeroWithGirl">
+
+			<img id="Hero" src="res/Images/duzidengdai.png" alt="Hero" >		
+			
+			<!--
+			<div id="Coastal">
+				<img id="CoastalImage" src="res/Images/Coastal.png" alt="Coastal">
+			</div>
+			-->
+		</div>
+
+		
+
+
+
+
+
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="JS/main.js"></script>
+	<script src="JS/myFlappyBird.js"></script>
+	<script>
+		main();
+	</script>
+
+	<script src="JS/parallax/deploy/parallax.js"></script>
+	<script>
+		var scene=document.getElementById('scene');
+		var parallax = new Parallax(scene);
+	</script>
+
+	
+</body>
+</html>
