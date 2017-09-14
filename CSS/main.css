@@ -1,0 +1,165 @@
+body, html {height: 100%;}
+
+body {background-image: url("../res/Images/HeftPapier.png"); margin: 0;}
+
+#Screen { position: absolute; width:100%; height: 100%;}
+
+	#Logo {position: absolute; top: 3%; left: 55%;}
+
+	#roll {width: 100%; height:2800px;}
+
+	#CanvasDiv {position: fixed; top: 10%; z-index: 1; width:640px; height:480px;  left: 50%; margin-left: -320px; top: 50%; margin-top: -240px; display: none;}
+
+	#blackboard {position: fixed; top: 0px; width: 100%; height: 100%; z-index: 2; display: none;}
+
+	#Top {position: fixed; top: 0px; background-image: url("../res/Images/HeftPapier.png"); background-color: rgba(0, 0, 255, 0.2); width: 100%; height: 30%; z-index: -1;}
+
+		#Gull1 {position: absolute; left: 25%; top: 7%;}
+		.monster3 {
+		  width: 190px;
+		  height: 240px;
+		  margin: 2% auto;
+		  background: url('../res/Images/xiaoniao.png') left center;
+		  animation: play 4s steps(10) infinite;
+		  position: relative;
+		  top: 45%;
+		}
+
+		@keyframes play {
+		    100% { background-position: -1900px; }
+		}
+
+		#Gull2 {height: 40%; position: absolute; left: 35%; top: 30%;}
+		.monster4 {
+		  width: 95px;
+		  height: 120px;
+		  margin: 2% auto;
+		  background: url('../res/Images/xiaoniao2.png') left center;
+		  animation: play 5s steps(10) infinite;
+		  position: relative;
+		  top: 35%;
+		}
+
+		@keyframes play {
+		    100% { background-position: -950px; }
+		}
+
+		
+
+		#Lightning1 { position: absolute; left: 25%; top: 8%; opacity:0;}
+		.monster {
+		  width: 190px;
+		  height: 240px;
+		  margin: 2% auto;
+		  background: url('../res/Images/shandian.png') left center;
+		  animation: play 1.5s steps(10) infinite;
+		  z-index: 4;
+		  position: absolute;
+		}
+		@keyframes play {
+		    100% { background-position: -1900px; }
+		}
+
+		#Lightning2 {height: 50%; position: absolute; left: 40%; top: 45%; opacity:0;}
+		.monster2 {
+		  width: 95px;
+		  height: 120px;
+		  margin: 2% auto;
+		  background: url('../res/Images/shandian2.png') left center;
+		  animation: play2 3s steps(10) infinite;
+		  z-index: 4;
+		  position: absolute;
+		}
+		@keyframes play2 {
+		    100% { background-position: -950px; }
+
+		}
+
+		#Devil {height: 70%; position:absolute; right: 30%;  top: 25%; width: 375px; height: 450px;display: none;}
+
+		#DevilWithGirl {height: 70%; position:absolute; right: 30%; top: 25%; width: 375px; height: 450px; display: none;}
+
+		#Heart {
+			position:absolute; left: 55%; top: 300px;
+			transition: clip-path 1s ease-in-out; /*transition 不管用？？？？？？？？？？*/
+			-moz-transition: clip-path 1s ease-in-out; /* Firefox 4 */
+			-webkit-transition: clip-path 1s ease-in-out; /* Safari and Chrome */
+			-o-transition: clip-path 1s ease-in-out; /* Opera */
+
+			
+			/*transition: -webkit-clip-path 3s ease-in-out;
+			-moz-transition: -webkit-clip-path 3s ease-in-out; 
+			-webkit-transition: -webkit-clip-path 3s ease-in-out; 
+			-o-transition: -webkit-clip-path 3s ease-in-out;
+			*/ 
+		
+			-webkit-clip-path: polygon(35% 9%, 50% 11%, 62% 21%, 63% 34%, 57% 48%, 40% 58%, 26% 55%, 16% 47%, 10% 30%, 20% 15%);
+			clip-path: polygon(35% 9%, 50% 11%, 62% 21%, 63% 34%, 57% 48%, 40% 58%, 26% 55%, 16% 47%, 10% 30%, 20% 15%);
+			/*
+			clip-path: circle(12.3% at 50% 50%);
+			-webkit-clip-path: circle(12.3% at 50% 50%);
+			*/
+			z-index: 3;
+		} 
+		/*
+		top 也没有用？？？？？？？？？？？？？？？？？
+		*/
+		
+		/*
+		#Heart:hover {
+			clip-path: polygon(51% 17%, 70% 2%, 92% 13%, 100% 34%, 91% 70%, 50% 100%, 13% 69%, 0 39%, 5% 16%, 28% 2%);
+			-webkit-clip-path: polygon(51% 17%, 70% 2%, 92% 13%, 100% 34%, 91% 70%, 50% 100%, 13% 69%, 0 39%, 5% 16%, 28% 2%);
+		}
+		*/
+
+
+	#Mid {position: absolute; top: 30%; width: 100%; z-index: -2; } /*top 30% 不管用？？？？？？*/
+
+		#MidImage {width: 100%;}
+		#realMid {position: fixed; top: 30%; width: 100%; height: 46%; background-image: url("../res/Images/HeftPapier.png"); background-color: #ffb3b3;}
+
+	
+
+
+	#Bot {position: fixed; bottom: 0px; width: 100%; height: 25%; background-image: url("../res/Images/HeftPapier.png"); z-index: -1;}
+
+		#Coastal {position: absolute; bottom: 0; width: 100%; border: solid 1px green; height: 100%; }
+
+		#HeroWithGirl {position: absolute; left: 20%; bottom: -10%; z-index: 1; width: 25%; display: block;}
+
+		#Hero {position: absolute; left: 20%; bottom: -10%; z-index: 1; width: 25%; display: block;}
+
+	.transition1s {transition: all 1s ease-in-out;}
+	.transition1s {transition: all 0.5s ease-in-out;}
+	
+
+		/**
+		#HeroAndGirl {position: absolute; left: 20%; z-index: 1; width: 20%; height: 50%; border: solid 1px red;}
+
+			#Hero1 {float: left; height: 100%;}
+
+				#Hero1Image {height: 100%;}
+
+			#Girl1 {height:100%;}
+
+				#Girl1Image {height: 100%;}
+		**/
+@media screen and (min-width: 700px) and (max-width: 1400px){
+	#Lightning1 {left: 15%;}
+	#Lightning2 {left: 30%; }
+	#Devil {left: 55%;}
+	#DevilWithGirl {left: 55%;}
+}
+
+
+@media screen and (max-width: 700px){
+	#Gull2 {visibility: hidden;}
+	#Lightning2 {visibility: hidden;}
+	#Gull1 {position: absolute; left: 15%;}
+	#Lightning1 {position: absolute; left: 30%;}
+	#Devil {position:absolute; left: 35%;}
+	#DevilWithGirl {position:absolute; left: 35%;}
+	#Heart {position:absolute; left: 40%;}
+	#CanvasDiv {z-index: 5; width:400px ; margin-left: -200px;}
+	#Logo {position: absolute; top: 3%; left: 40%;}
+}
